@@ -1,0 +1,280 @@
+html { 
+ box-sizing: border-box;
+}
+*, *:after:, *:before{
+  box-sizing: inherit;
+}
+body{
+  background-color: tomato;
+}
+.container {
+  display: flex;
+  max-width: 960px;
+  background-color: #eaeaea;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+.profile {
+  flex-basis: 120%;
+  background-color: #39383a;
+  color: #fff;
+}
+.profile-photo {
+ height: 270px;
+  background-image: url(http://ospreygraphix.com/Screen%20Shots/Rescue-rangers/Gadget/Gadget-jumpsuit/Gadget-jumpsuit405.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.profile-info {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.profile-text {
+  front-size: 13px;
+  line-height: 24.19px;
+  margin-bottom: 50px;
+}
+.heading {
+  margin: 0;
+  padding-bottom: 16px;
+  text-transform: uppercase;
+  font-weight: 300;  
+}
+.heading-light {
+  color: #fff;
+  border-bottom: 2px #5a5a5a dashed;
+}
+.contacts{
+  margin-bottom:20px;
+}
+.contacts-title {
+  color: #fff;
+  margin-bottom: 13px;
+}
+.contacts-text{
+  color: #ababab;
+  text-decoration: none;
+  padding-left: 20px;
+  line-height: 20.97px;
+}
+.contacts-item{
+   border-bottom: 2px #5a5a5a dashed;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+address{
+  font-style: normal;
+}
+.fas{
+  margin-right: 7px;
+}
+.languages{
+   display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+.language{
+  width: 90px;
+  height: 90px;
+  border: 6px solid #5c5c5c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+.language-text{
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.languages-per{
+  font-size: 15px;
+  font-weight: 600;
+}
+.resume{
+  padding: 25px 30px;
+  flax-basis: 70%;
+  background-color: #ababa;
+}
+.resume-wrap {
+  padding: 25px 30px;
+  border: 1px solid rgba(168, 168, 168, 0.44);
+  min-height: 96%;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 38px;
+}
+.logo-img {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #39383a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-lines {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-director: column;
+}
+.logo-line {
+  widht: 43px;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.list{
+  padding-left: 15px;
+}
+.list-item{
+  position: relative;
+  padding-left: 20px;
+}
+.list-item:before {
+  contant: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #000;
+  
+}
+.about {
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(168, 168, 168, 0.44);
+  text-align: center;
+  margin-bottom: 40px;
+}
+.name {
+  font-size: 16px;
+  tex-transform: uppercase;
+  letter-spacing: 7px;
+}
+.position {
+ display: inline-block; 
+ font-size: 10px;
+ text-transform: uppercase;
+ color: #808080; 
+ margin-bottom: 30px;
+}
+.about-address {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+.about-contacts__link {
+  text-decoration: none;
+  color: #777777;
+}
+$blue: #a3d5d3;
+.heading_skills{
+  margin-bottom: 48px;
+}
+.skill-list{
+  list-style: none;
+  padding-left: 0;
+}
+.skill-list_item{
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.level{
+  width: 70%;
+  height: 8px;
+  border: 1px solid #39383a;
+  position: relative;
+}
+.level:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background-color: #abab;
+}
+.level-100:before{
+  width: 100%;
+}
+.level-30:before{
+  width: 30%;
+}
+.level-50:before{
+  width: 50%;
+}
+@media(max-width: 1024px){
+  .container{
+    width: 90%;
+  }
+}
+@media (max-width: 992px){
+  .container{
+    flex-direction: column;
+    width: 70%;
+  }
+  .profile-photo{
+    height: 500px;
+  }
+  .lines {
+    display: none;
+  }
+}
+@media (max-width: 768px){
+  .container {
+    width: 80%;
+  }
+  .resume-wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .list-item__title{
+    font-size: 14px;
+  }
+  .list-item__date {
+    font-size: 12px;
+  }
+  .list-item__size {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}
+@media (max-width: 567px){
+  .logo-img{
+    width: 70px;
+    height: 70px;
+  }
+  .logo-lines {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .profile-photo {
+     display: none;
+  }
+}
+@media (max-width: 480px){
+  .logo {
+    display: none;
+  }
+  .containet{
+    min-width: 320px;
+  }
+  .name {
+    letter-spacing: normal;
+  }
+  .level {
+    width: 50%;
+  }
+}
